@@ -1,27 +1,22 @@
 public class Producto{
     private String nombreProducto;
-    private int valor;
+    private float precio;
     
-    
-    public Producto(String nombreProducto,int valor) {
+    public Producto(String nombreProducto, float precio) {
         this.nombreProducto = nombreProducto;
-        this.valor = valor;
-
+        this.precio = precio;
     }
 
     public String getNombreProducto() {
         return nombreProducto;
     }
 
-    public int getValor() {
-        return valor;
+    public float getPrecio() {
+        return precio;
     }
 
-   public String mostrarDatos(){
-     return "Nombre del producto: "+nombreProducto+ "\n Precio del producto: "+valor;
-
-
-                        
+   public String mostrarDatos() {
+        return "Nombre del producto: " + nombreProducto + "\nPrecio del producto: " + precio;
    }
 }
    
